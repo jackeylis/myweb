@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.cotainer{
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.carousel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.cotainer .carousel img{
+    width: 500px;
+    height: 300px;
+}
+
+.indicator{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    left: 50%;/*配合CSS3语法移动居中对齐*/
+    transform: translateX(-50%);/*CSS3语法移动居中对齐*/
+}
+.indicator span{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #CCC;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+/*span里面的class：active元素*/
+.indicator .active{
+background-color: #FFF; 
+border-color: #FFF;
+}
